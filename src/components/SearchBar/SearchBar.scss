@@ -1,0 +1,31 @@
+.search-bar {
+  background-color: #e7e5fa;
+  padding: 16px;
+
+  &--selects {
+    display: flex;
+    gap: 16px;
+
+    > * {
+      flex: 1;
+    }
+
+    button {
+      flex: 0;
+      flex-basis: auto;
+      border: 0;
+      background-color: transparent;
+    }
+
+    + * {
+      margin-top: 16px;
+    }
+  }
+
+  &--text {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
+}

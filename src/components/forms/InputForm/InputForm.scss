@@ -1,0 +1,50 @@
+.input-field {
+  display: flex;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 6px;
+
+  &--icon {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+
+    path {
+      fill: #2e86c1;
+    }
+  }
+  &--clear {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      left: 50%;
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 100%;
+      background-color: #2e86c1;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  input {
+    border-radius: 6px;
+    flex: 1;
+    padding: 8px 8px;
+    border: 0px;
+    font-size: 21px;
+    text-indent: 32px;
+  }
+}
